@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maze</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="maze">
+        <div class="start block r1 c1 open-down" row="1" col="1">
+            <div class="player"></div>
+        </div>
+        <div class="block r1 c2 open-down open-right" row="1" col="2"></div>
+        <div class="block r1 c3 open-left open-right open-down" row="1" col="3"></div>
+        <div class="block r1 c4 open-left open-down" row="1" col="4"></div>
+        <div class="block r1 c5 open-right" row="1" col="5"></div>
+        <div class="block r1 c6 open-down open-left open-right" row="1" col="6"></div>
+        <div class="block r1 c7 open-left open-down" row="1" col="7"></div>
+        <div class="block r1 c8 open-down" row="1" col="8"></div>
+        <div class="block r2 c1 open-up open-down" row="2" col="1"></div>
+        <div class="block r2 c2 open-down open-up" row="2" col="2"></div>
+        <div class="block r2 c3 open-up" row="2" col="3"></div>
+        <div class="block r2 c4 open-up open-down" row="2" col="4"></div>
+        <div class="block r2 c5 open-down open-right" row="2" col="5"></div>
+        <div class="block r2 c6 open-left open-up open-right" row="2" col="6"></div>
+        <div class="block r2 c7 open-left open-up open-right" row="2" col="7"></div>
+        <div class="block r2 c8 open-left open-up" row="2" col="8"></div>
+        <div class="block r3 c1 open-up open-right" row="3" col="1"></div>
+        <div class="block r3 c2 open-left open-up open-right" row="3" col="2"></div>
+        <div class="block r3 c3 open-left open-down" row="3" col="3"></div>
+        <div class="block r3 c4 open-up open-down" row="3" col="4"></div>
+        <div class="block r3 c5 open-up open-down" row="3" col="5"></div>
+        <div class="block r3 c6 open-down open-right" row="3" col="6"></div>
+        <div class="block r3 c7 open-left open-right" row="3" col="7"></div>
+        <div class="block r3 c8 open-left open-down" row="3" col="8"></div>
+        <div class="block r4 c1 open-down open-right" row="4" col="1"></div>
+        <div class="block r4 c2 open-left open-down" row="4" col="2"></div>
+        <div class="block r4 c3 open-down open-up" row="4" col="3"></div>
+        <div class="block r4 c4 open-up open-right" row="4" col="4"></div>
+        <div class="block r4 c5 open-left open-up" row="4" col="5"></div>
+        <div class="block r4 c6 open-up open-down" row="4" col="6"></div>
+        <div class="block r4 c7 open-down open-right" row="4" col="7"></div>
+        <div class="block r4 c8 open-up open-left open-down" row="4" col="8"></div>
+        <div class="block r5 c1 open-down open-up" row="5" col="1"></div>
+        <div class="block r5 c2 open-up open-down" row="5" col="2"></div>
+        <div class="block r5 c3 open-up open-right" row="5" col="3"></div>
+        <div class="block r5 c4 open-left open-right" row="5" col="4"></div>
+        <div class="block r5 c5 open-left open-right open-down" row="5" col="5"></div>
+        <div class="block r5 c6 open-left open-up" row="5" col="6"></div>
+        <div class="block r5 c7 open-up" row="5" col="7"></div>
+        <div class="block r5 c8 open-up open-down" row="5" col="8"></div>
+        <div class="block r6 c1 open-up open-down" row="6" col="1"></div>
+        <div class="block r6 c2 open-up open-right" row="6" col="2"></div>
+        <div class="block r6 c3 open-left open-right" row="6" col="3"></div>
+        <div class="block r6 c4 open-left open-down" row="6" col="4"></div>
+        <div class="block r6 c5 open-up open-down" row="6" col="5"></div>
+        <div class="block r6 c6 open-down open-right" row="6" col="6"></div>
+        <div class="block r6 c7 open-left open-right" row="6" col="7"></div>
+        <div class="block r6 c8 open-left open-up" row="6" col="8"></div>
+        <div class="block r7 c1 open-up open-down" row="7" col="1"></div>
+        <div class="block r7 c2 open-down open-right" row="7" col="2"></div>
+        <div class="block r7 c3 open-left open-down" row="7" col="3"></div>
+        <div class="block r7 c4 open-down open-up" row="7" col="4"></div>
+        <div class="block r7 c5 open-up" row="7" col="5"></div>
+        <div class="block r7 c6 open-up open-down" row="7" col="6"></div>
+        <div class="block r7 c7 open-down open-right" row="7" col="7"></div>
+        <div class="block r7 c8 open-left open-down" row="7" col="8"></div>
+        <div class="block r8 c1 open-up open-right" row="8" col="1"></div>
+        <div class="block r8 c2 open-left open-up" row="8" col="2"></div>
+        <div class="block r8 c3 open-up" row="8" col="3"></div>
+        <div class="block r8 c4 open-up open-right" row="8" col="4"></div>
+        <div class="block r8 c5 open-right open-left" row="8" col="5"></div>
+        <div class="block r8 c6 open-left open-up open-right" row="8" col="6"></div>
+        <div class="block r8 c7 open-left open-up" row="8" col="7"></div>
+        <div class="finish block r8 c8 open-up " row="8" col="8"></div>
+    </div>
+    <div class="button container">
+        <button class="up moveUp">^</button>
+    </div>
+    <div class="second button container">
+        <button class="left moveLeft">
+            <</button> <button class="right moveRight">>
+        </button>
+    </div>
+    <div class="third button container">
+        <button class="down moveDown">v</button>
+    </div>
+    <div class="reset-button-container">
+        <button class="reset">Reset</button>
+    </div>
+
+    <script type="text/javascript" src="jquery-3.4.1.slim.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+</body>
+
+</html>
