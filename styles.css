@@ -46,29 +46,32 @@
     height: 40px;
     width: 40px;
     font-size: xx-large;
-    margin-left: 750px;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 .down {
     height: 40px;
     width: 40px;
     font-size: x-large;
-    margin-left: 750px;
 }
 
 .left {
     height: 40px;
     width: 40px;
     font-size: x-large;
-    margin-left: 688px;
+    margin-right: 30px;
 }
 
 .right {
     height: 40px;
     width: 40px;
     font-size: x-large;
-    margin-left: 80px;
+    margin-left: 30px;
+}
+
+.button.container {
+    /* margin: auto; */
+    text-align: center;
 }
 
 .player {
