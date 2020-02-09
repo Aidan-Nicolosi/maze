@@ -85,6 +85,26 @@
     top: 13px;
 }
 
+.player.moving-down {
+    transform: translateY(50px);
+    transition: all 150ms ease-in-out;
+}
+
+.player.moving-right {
+    transform: translateX(50px);
+    transition: all 150ms ease-in-out;
+}
+
+.player.moving-left {
+    transform: translateX(-50px);
+    transition: all 150ms ease-in-out;
+}
+
+.player.moving-up {
+    transform: translateY(-50px);
+    transition: all 150ms ease-in-out;
+}
+
 .reset-button-container {
     text-align: center;
 }
